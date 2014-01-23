@@ -1,6 +1,6 @@
 #Storage provider: Local, AWS
-provider: AWS
-engine: AWS
-aws_access_key_id: AKIAIUVABB5QMCRWMO2Q
-aws_secret_access_key: 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
-aws_bucket: gblog
+#provider: AWS
+#engine: AWS
+#aws_access_key_id: AKIAIUVABB5QMCRWMO2Q
+#aws_secret_access_key: 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
+#aws_bucket: gblog
