@@ -1,0 +1,15 @@
+<a href="<%= article.permalink_url %>" style="display:block">
+	<article id="article-<%= article.id %>" class='h-entry hentry h-as-note' style="background:  url('<%= article.image %>') no-repeat center">
+	<div class="tabela">
+		<div class="linha">
+			<div class="articletitle celula">
+				<h2 class="page-header p-name entry-title"><%=article.title %></h2>
+			</div>
+			<div class="celula articleblank"> </div>
+			<div class="articledate celula">
+				<h2 class="page-header p-name entry-title"><%= article.created_at.to_date.to_s %></h2>
+			</div>
+		</div>
+	</div>
+	</article>
+</a>
