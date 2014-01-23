@@ -424,6 +424,7 @@ function edInsertPublifyCode(which, i, defaultValue) {
 function edInsertImage(which) {
     myField = document.getElementById(which);
 	var myValue = prompt('Enter the URL of the image', 'http://');
+	var theImage = prompt
 	if (myValue && myValue.length > 0) {
 		myValue = '<img src="'
 				+ myValue
@@ -436,10 +437,16 @@ function edInsertImage(which) {
 function edInsertImageFromCarousel(which, image) {
     myField = document.getElementById(which);
 	if (image) {
-		myValue = '<img src="'
+		if (document.getElementById("article_image").value == "" && confirm('Essa é a imagem da capa?')) {
+			which = 'article_image';
+			myValue = image
+		} else {
+			which = 'article_body_and_extended';
+			myValue = '<img src="'
 				+ image
 				+ '" alt="' + prompt('Enter a description of the image', '')
 				+ '" />';
+		}
 		edInsertContent(which, myValue);
 	}
 }
