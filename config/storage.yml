@@ -1,6 +1,6 @@
 #Storage provider: Local, AWS
 provider: AWS
 engine: AWS
-aws_access_key_id: AKIAIUVABB5QMCRWMO2Q
-aws_secret_access_key: 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
+aws_access_key_id: ENV['S3_KEY']
+aws_secret_access_key: ENV['S3_SECRET']
 aws_bucket: gblog
